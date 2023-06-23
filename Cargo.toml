@@ -1,0 +1,18 @@
+[package]
+name = "renderzilla"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+resvg = "0.34.1"
+usvg = "0.34.1"
+tiny-skia = "0.11.0"
+
+
+[lib]
+name = "render"
+path = "src/lib.rs"
+
+[[bin]]
+name = "renderzilla"
+path = "src/bin/bin.rs"
